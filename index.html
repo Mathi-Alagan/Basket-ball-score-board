@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Basketball score app</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="board">
+            <h1>HOME</h1>
+            <div class="score">
+                <div class="display-count" id="home-score-count">
+                    0
+                </div>
+            </div>
+            <div class="points">
+                <div class="point-box" onclick="home_plus_one()">
+                    +1
+                </div>
+                <div class="point-box" onclick="home_plus_two()">
+                    +2
+                </div>
+                <div class="point-box" onclick="home_plus_three()">
+                    +3
+                </div>
+            </div>
+        </div>
+        <div class="board">
+            <h1>GUEST</h1>
+            <div class="score">
+                <div class="display-count" id="guest-score-count">
+                    0
+                </div>
+            </div>
+            <div class="points">
+                <div class="point-box" onclick="guest_plus_one()">
+                    +1
+                </div>
+                <div class="point-box" onclick="guest_plus_two()">
+                    +2
+                </div>
+                <div class="point-box" onclick="guest_plus_three()">
+                    +3
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
